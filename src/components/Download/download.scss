@@ -1,0 +1,53 @@
+.download {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #fff;
+
+    .actions {
+
+        display: flex;
+        flex-direction: row;
+
+
+
+        button,
+        a {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            color: #caccd1;
+            font-size: 25px;
+            align-items: center;
+
+            select {
+                background-color: red;
+
+            }
+        }
+    }
+
+    .brands-lenght {
+        margin-right: 15px;
+        height: 20px;
+        color: #caccd1;
+
+    }
+
+    .all-brands-icon {
+        color: #caccd1;
+        padding-left: 15px;
+        border-left: 1px solid #caccd1;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    span {
+        font-size: 15px;
+        color: #9f9fa3;
+    }
+}

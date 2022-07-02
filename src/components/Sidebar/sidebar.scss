@@ -1,0 +1,141 @@
+.sidebar {
+    width: 350px;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+
+    .logo {
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        img {
+            width: 55px;
+        }
+
+        a {
+            font-size: 28px;
+        }
+    }
+
+    .description {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 20px 0 20px;
+        margin-left: 20px;
+        margin-bottom: 25px;
+        color: #607d8b;
+
+        a {
+            &:hover {
+                color: #0099e5;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .menu {
+        ul {
+            li {
+                a {
+                    margin: 0 0 10px 20px;
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #333;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #0099e5;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.about-modal {
+    max-width: 720px;
+    background: #fff;
+    box-shadow: 0 0 15px 0 rgba(#000, .15);
+    padding: 50px;
+    position: relative;
+
+    .modal-close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        background: #ddd;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+
+    h3 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        color: #6f6f6f;
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+
+        b {
+            color: #000;
+        }
+    }
+}
+
+.about-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(#fff, .8);
+}
+
+.interaction {
+    margin: 30px 0;
+    padding: 20px;
+    border-bottom: 1px solid #adadad;
+    border-top: 1px solid #adadad;
+    cursor: pointer;
+
+    &:hover {
+        p {
+            color: #0099e5;
+        }
+    }
+
+    .interaction-cont {
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #607d8b;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        width: 230px;
+        background-color: rebeccapurple;
+    }
+}
